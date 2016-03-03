@@ -1,0 +1,5 @@
+name: laravelonsae
+version: 1
+handle:
+- rewrite: if (path ~ "^/$") goto "public/index.php"
+- rewrite: if(!is_dir() && !is_file() && path~"^(.*)$") goto "public/index.php/$1"

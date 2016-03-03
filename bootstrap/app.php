@@ -41,6 +41,10 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+// update storage path 
+// update by lazypeople
+$app->useStoragePath('saemc://stor');
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application
